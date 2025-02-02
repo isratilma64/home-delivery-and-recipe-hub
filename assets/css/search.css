@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+   
+:root{
+
+    --color-bg-1:#F48E28;
+    --color-bg-light:#f09e4c;
+    --color-brand:rgb(134, 97, 97);
+    --color-brand-2:black;
+    --color-border:#dbbfa3;
+    --font-main:"Gentium Plus";
+    --border-radius: 32px;
+    --font-clr:rgb(59, 10, 10);}
+
+    body
+    {
+        background-color:var(--color-bg-1);
+        color:var(--font-clr);
+        font-family: var(--font-main);
+        line-height: 1.7;
+   
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        color:var(--font-clr);
+        
+    }
+
+a
+{
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+a:hover{
+    color:var( --color-bg-1);
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* navbar*/
+.navbar{
+    background-color:var(--color-bg-1);
+    color:var(--font-clr);
+    font-size: 20px;
+  
+}
+
+.nav-item a{
+    color: var(--font-clr);
+}
+.nav-item a:hover{
+color: var(--color-border);
+}
+.icon{
+    font-size: 25px;
+}
+*drop-down profile */
+.sub-menu-wrap{
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    width: 320px;
+
+
+}
+.dropdown-menu{
+ background-color: var(--color-bg-light);
+}
+/* btn*/
+.btn{
+    padding: 12px 24px;
+}
+.btn-brand{
+    background-color:var(--font-clr);
+    color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.btn-brand-2{
+    background-color:transparent;
+    color: white;
+    font-weight: 1000px;
+    border-radius: 100px;
+}
+
+.btn-brand-2:hover{
+    background-color:var(--color-border) ;
+    border-color: #dbbfa3;
+   
+}
+
+.btn-brand:hover{
+    background-color:var(--color-bg-light) ;
+    border-color: #dbbfa3;
+   
+}
+
+.product img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+    
+.container .search
+{
+display: flex;
+padding: 30px 0px;
+justify-content: space-between;
+}
+.container .search h1
+{
+letter-spacing: 3px;
+display: inline-block;
+border-bottom: 2px solid var(--font-clr);
+padding-bottom: 10px;
+}
+.container .search input
+{padding: 10px 30px;
+    background: var(--font-clr);
+    border: 1px solid var(--font-clr);
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    outline: none;
+    border-radius: 30px;
+    
+    color: var(--color-bg-1);
+    }
+
+
+    .container .search input::placeholder
+    {
+        color: var(--color-bg-1);
+    font-weight: 700;
+    
+    }
+   
+.container .product-list .product
+{
+margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .container .search input
+    { padding: 5px 10px;
+       
+        }
+        
+
+
+}
+
+

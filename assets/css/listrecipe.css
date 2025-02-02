@@ -1,0 +1,37 @@
+
+    .card img {
+        height: 200px;  /* Fixed height for images */
+        object-fit: cover;  /* Ensures images are scaled properly without distortion */
+    }
+    .card-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .btn-sm {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .footer-box {
+        background-color: var(--color-bg-1);
+        color: var(--font-clr);
+        padding: 20px 0;
+    }
+    
+    .social-icon {
+        color: var(--font-clr); /* Default color */
+        font-size: 1.5em; /* Adjust size as needed */
+        transition: color 0.3s ease; /* Smooth transition */
+    }
+    
+    .social-icon:hover {
+        color: orange; /* Color on hover */
+    }
+    
+    .footer-box p {
+        margin: 0;
+        font-size: 0.9em; /* Adjust as needed */
+    }

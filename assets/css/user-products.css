@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root{
+
+    --color-bg-1:#F48E28;
+    --color-bg-light:#f09e4c;
+    --color-brand:rgb(134, 97, 97);
+    --color-brand-2:black;
+    --color-border:#dbbfa3;
+    --font-main:"Gentium Plus";
+    --border-radius: 32px;
+    --font-clr:rgb(59, 10, 10);
+}
+body{
+    background-color:var(--color-bg-light);
+    color:var(--font-clr);
+    font-family: var(--font-main);
+    line-height: 1.7;
+}
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        color:var(--font-clr);
+        
+    }
+
+a
+{
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+a:hover{
+    color:var( --color-bg-1);
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* navbar*/
+.navbar{
+    background-color:var(--color-bg-1);
+    color:var(--font-clr);
+    font-size: 20px;
+}
+
+.nav-item a{
+    color: var(--font-clr);
+    
+}
+.nav-item a:hover{
+color: var(--color-border);
+}
+.icon{
+    font-size: 25px;
+}
+
+/*drop-down profile */
+.sub-menu-wrap{
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    width: 320px;
+
+
+}
+.dropdown-menu{
+ background-color: var(--color-bg-light);
+}
+/* btn*/
+.btn{
+    padding: 12px 24px;
+}
+.btn.btn-brand{
+     background-color: var(--font-main);
+     color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.btn-brand:hover{
+    background-color:var(--color-bg-light) ;
+    border-color: #dbbfa3;
+   
+}
+
+.btn-brand-2{
+    background-color:transparent;
+    color: white;
+    font-weight: 1000px;
+    border-radius: 100px;
+}
+
+.btn-brand-2:hover{
+    background-color:var(--color-border) ;
+    border-color: #dbbfa3;
+   
+}
+
+        /* Styles for popup modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1050; /* Must be higher than the overlay */
+            padding: 20px;
+            width: 400px;
+            height: 400px; /* Fixed height */
+        }
+        
+        .modal.active {
+            display: block;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1040; /* Ensure it appears below the modal */
+            display: none;
+        }
+        
+        .overlay.active {
+            display: block;
+        }
+        
+       
+      
+        .container {
+        display: flex; /* Use flexbox to arrange horizontally */
+        flex-wrap: wrap; /* Wrap the cards if they exceed the container width */
+        gap: 20px; /* Add space between cards */
+        padding: 20px;
+        justify-content: center;
+    }
+
+    /* Card styles */
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        background: var(--color-border);
+        border: 1px solid var(--color-bg-light);
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image scales and crops properly */
+    border-radius: 10px; /* Optional: Rounded corners for a cleaner look */
+}
+
+
+    .product-card h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: var(--font-clr);
+    }
+
+    .product-card p {
+        margin: 5px 0;
+        color: var(--font-clr);
+    }
+
+    .product-card button {
+        padding: 10px 15px;
+        background: var(--font-clr);
+        color: var(--color-bg-1);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .product-card button:hover {
+        background:var(--color-bg-1);
+        color: var(--font-clr);
+    }
+
+    .footer-box {
+        background-color: var(--color-bg-1);
+        color: var(--font-clr);
+        padding: 20px 0;
+    }
+    
+    .social-icon {
+        color: var(--font-clr); /* Default color */
+        font-size: 1.5em; /* Adjust size as needed */
+        transition: color 0.3s ease; /* Smooth transition */
+    }
+    
+    .social-icon:hover {
+        color: orange; /* Color on hover */
+    }
+    
+    .footer-box p {
+        margin: 0;
+        font-size: 0.9em; /* Adjust as needed */
+    }
+
+
+

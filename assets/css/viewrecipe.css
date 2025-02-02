@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root{
+
+    --color-bg-1:#F48E28;
+    --color-bg-light:#f09e4c;
+    --color-brand:rgb(134, 97, 97);
+    --color-brand-2:black;
+    --color-border:#dbbfa3;
+    --font-main:"Gentium Plus";
+    --border-radius: 32px;
+    --font-clr:rgb(59, 10, 10);
+}
+body{
+    background-color:var(--color-bg-1);
+    color:var(--font-clr);
+    font-family: var(--font-main);
+    line-height: 1.7;
+}
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        color:var(--font-clr);
+        
+    }
+
+a
+{
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+a:hover{
+    color:var( --color-bg-1);
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* navbar*/
+.navbar{
+    background-color:var(--color-bg-1);
+    color:var(--font-clr);
+    font-size: 20px;
+}
+
+.nav-item a{
+    color: var(--font-clr);
+    
+}
+.nav-item a:hover{
+color: var(--color-border);
+}
+.icon{
+    font-size: 25px;
+}
+
+/*drop-down profile */
+.sub-menu-wrap{
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    width: 320px;
+
+
+}
+.dropdown-menu{
+ background-color: var(--color-bg-light);
+}
+/* btn*/
+.btn{
+    padding: 12px 24px;
+}
+.btn.btn-brand{
+     background-color: var(--font-main);
+     color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.btn-brand:hover{
+    background-color:var(--color-bg-light) ;
+    border-color: #dbbfa3;
+   
+}
+
+.btn-brand-2{
+    background-color:transparent;
+    color: white;
+    font-weight: 1000px;
+    border-radius: 100px;
+}
+
+.btn-brand-2:hover{
+    background-color:var(--color-border) ;
+    border-color: #dbbfa3;
+   
+}
+
+
+
+
+
+
+
+/* Recipe Details Page Styling */
+.recipe-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-border); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Adds a subtle blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Slight border for a polished look */
+}
+
+/* Recipe Title */
+.recipe-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color:var(--font-clr);
+}
+
+/* Recipe Image */
+.recipe-image {
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color:var(--font-clr);
+    border-bottom: 2px solid #dbbfa3;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Ingredients and Instructions Lists */
+.ingredients-list, .instructions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.instructions-list {
+    list-style-type: decimal; /* Use numbered list for instructions */
+}
+
+.ingredients-list li, .instructions-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color:var(--font-clr);
+}
+
+/* Back Button */
+.btn-brand {
+    background-color: var(--font-clr);
+    color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-bg-light);
+    color: var(--font-clr);
+}
+.footer-box {
+    background-color: var(--color-bg-1);
+    color: var(--font-clr);
+    padding: 20px 0;
+}
+
+.social-icon {
+    color: var(--font-clr); /* Default color */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icon:hover {
+    color: orange; /* Color on hover */
+}
+
+.footer-box p {
+    margin: 0;
+    font-size: 0.9em; /* Adjust as needed */
+}

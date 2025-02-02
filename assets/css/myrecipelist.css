@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root{
+
+    --color-bg-1:#F48E28;
+    --color-bg-light:#f09e4c;
+    --color-brand:rgb(134, 97, 97);
+    --color-brand-2:black;
+    --color-border:#dbbfa3;
+    --font-main:"Gentium Plus";
+    --border-radius: 32px;
+    --font-clr:rgb(59, 10, 10);
+}
+body{
+    background-color:var(--color-bg-light);
+    color:var(--font-clr);
+    font-family: var(--font-main);
+    line-height: 1.7;
+}
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        color:var(--font-clr);
+        
+    }
+
+a
+{
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+a:hover{
+    color:var( --color-bg-1);
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* navbar*/
+.navbar{
+    background-color:var(--color-bg-1);
+    color:var(--font-clr);
+    font-size: 20px;
+}
+
+.nav-item a{
+    color: var(--font-clr);
+    
+}
+.nav-item a:hover{
+color: var(--color-border);
+}
+.icon{
+    font-size: 25px;
+}
+
+/*drop-down profile */
+.sub-menu-wrap{
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    width: 320px;
+
+
+}
+.dropdown-menu{
+ background-color: var(--color-bg-light);
+}
+/* btn*/
+.btn{
+    padding: 12px 24px;
+}
+.btn.btn-brand{
+     background-color:var(--font-clr);
+     color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.btn-brand:hover{
+    background-color:var(--color-bg-light) ;
+    border-color: #dbbfa3;
+   
+}
+
+.btn-brand-2{
+    background-color:transparent;
+    color: white;
+    font-weight: 1000px;
+    border-radius: 100px;
+}
+
+.btn-brand-2:hover{
+    background-color:var(--color-border) ;
+    border-color: #dbbfa3;
+   
+}
+/* Recipe card hover effect */
+/* Recipe Card Styling */
+.recipe-card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Recipe Name (Above Image) */
+.recipe-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+
+/* Recipe Image */
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.recipe-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Action Buttons Over Image */
+.button-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-overlay a {
+    background-color:var(--font-clr);
+    color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-overlay a:hover {
+    background-color: var(--color-bg-1);
+    color: var(--font-clr);
+
+}
+
+.button-overlay .btn-danger {
+    background-color:rgb(247, 72, 14);
+    color: var(--font-clr);
+}
+
+.button-overlay .btn-danger:hover {
+    background-color: var(--color-bg-1);
+}
+
+/* Image Wrapper for Positioning */
+.image-wrapper {
+    position: relative;
+}
+.footer-box {
+    background-color: var(--color-bg-1);
+    color: var(--font-clr);
+    padding: 20px 0;
+}
+
+.social-icon {
+    color: var(--font-clr); /* Default color */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icon:hover {
+    color: orange; /* Color on hover */
+}
+
+.footer-box p {
+    margin: 0;
+    font-size: 0.9em; /* Adjust as needed */
+}
